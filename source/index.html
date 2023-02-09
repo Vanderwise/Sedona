@@ -42,33 +42,35 @@
     <main class="page-main">
       <div class="wrapper">
         <h1 class="visually-hidden">Город Sedona - небольшой городок в Аризоне</h1>
-        <section class="slogan">
+        <div class="slogan">
           <div class="slogan__wrapper">
             <!-- Картинка гор будет добавлена как bacjground -->
             <img src="../source/img/text-sedona-index.svg" alt="Добро пожаловать в прекрасную Sedona. Потому что Гранд Каньон отстой">
           </div>
-        </section>
+        </div>
         <section class="content">
           <header class="content__header">
             <h2 class="visually-hidden">Причины, почему Sedona лучше Гранд Каньона</h2>
             <p class="content__slogan">СЕДОНА — небольшой  городок в Аризоне,  заслуживающий большего!</p>
-            <p class="content__intro">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+            <p class="content__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
           </header>
-          <div class="content__card content__card--blue">
-            <h3 class="content__name">Настоящий городок</h3>
-            <span class="content__number">- №1 -</span>
-            <p class="content__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <div class="content__wrapper">
+            <div class="content__card content__card--blue">
+              <h3 class="content__name">Настоящий городок</h3>
+              <span class="content__number">- №1 -</span>
+              <p class="content__description">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
+            <img 
+              class="content__image content__image-1" 
+              src="../source/img/main-city-desktop@1x.jpg"
+              srcset="
+                ../source/img/main-city-mobile@1x.jpg 320w,
+                ../source/img/main-city-tablet@1x.jpg 768w,
+                ../source/img/main-city-desktop@1x.jpg 1024w
+                "
+              sizes="(max-width: 320px) 280px, (max-width: 768px) 700px, 1024px" 
+              alt="фасад здания">
           </div>
-          <img 
-            class="content__image content__image-1" 
-            src="../source/img/main-city-desktop@1x.jpg"
-            srcset="
-              ../source/img/main-city-mobile@1x.jpg 320w,
-              ../source/img/main-city-tablet@1x.jpg 768w,
-              ../source/img/main-city-desktop@1x.jpg 1024w
-              "
-            sizes="(max-width: 320px) 280px, (max-width: 768px) 700px, 1024px" 
-            alt="фасад здания">
           <div class="content__card-wrapper">
             <div class="content__card content__card--house">
               <h3 class="content__name">Жилье</h3>
@@ -83,36 +85,40 @@
               <p class="content__desctiption">Не только китайского, но и местного производства!</p>
             </div>
           </div>
-          <img 
-            class="content__image content__image-2" 
-            src="../source/img/main-bridge-mobile@1x.jpg" 
-            srcset="
-              ../source/img/main-bridge-mobile@1x.jpg 320w,
-              ../source/img/main-bridge-tablet@1x.jpg 768w,
-              ../source/img/main-bridge-desktop@1x.jpg 1024w
-              "
-            sizes="(max-width: 320px) 280px, (max-width: 768px) 700px, 1024px"
-            alt="каменный мост через ущелье">
-          <div class="content__card content__card--blue">
-            <h3 class="content__name">Там есть мост дьявола</h3>
-            <span class="content__number">- №2 -</span>
-            <p class="content__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <div class="content__wrapper">
+            <img 
+              class="content__image content__image-2" 
+              src="../source/img/main-bridge-mobile@1x.jpg" 
+              srcset="
+                ../source/img/main-bridge-mobile@1x.jpg 320w,
+                ../source/img/main-bridge-tablet@1x.jpg 768w,
+                ../source/img/main-bridge-desktop@1x.jpg 1024w
+                "
+              sizes="(max-width: 320px) 280px, (max-width: 768px) 700px, 1024px"
+              alt="каменный мост через ущелье">
+            <div class="content__card content__card--blue">
+              <h3 class="content__name">Там есть мост дьявола</h3>
+              <span class="content__number">- №2 -</span>
+              <p class="content__description">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
           </div>
-          <div class="content__card content__card--gray">
-            <h3 class="content__name">Небольшая площадь</h3>
-            <span class="content__number">- №3 -</span>
-            <p class="content__description">Все интересные места находятся очень близко</p>
+          <div class="content__wrapper">
+            <div class="content__card content__card--gray">
+              <h3 class="content__name">Небольшая площадь</h3>
+              <span class="content__number">- №3 -</span>
+              <p class="content__description">Все интересные места находятся очень близко</p>
+            </div>
+            <div class="content__card content__card--gray">
+              <h3 class="content__name">Красивая дорога</h3>
+              <span class="content__number">- №4 -</span>
+              <p class="content__description">Хать в седону из лас-вегаса совсем не скучно!</p>
+            </div>
+            <div class="content__card content__card--gray">
+              <h3 class="content__name">Мало туристов</h3>
+              <span class="content__number">- №5 -</span>
+              <p class="content__description">Большинство едет в гранд каньон и толпится там</p>
+            </div>        
           </div>
-          <div class="content__card content__card--gray">
-            <h3 class="content__name">Красивая дорога</h3>
-            <span class="content__number">- №4 -</span>
-            <p class="content__description">Хать в седону из лас-вегаса совсем не скучно!</p>
-          </div>
-          <div class="content__card content__card--gray">
-            <h3 class="content__name">Мало туристов</h3>
-            <span class="content__number">- №5 -</span>
-            <p class="content__description">Большинство едет в гранд каньон и толпится там</p>
-          </div>        
         </section>
         <section class="hotel-search">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
